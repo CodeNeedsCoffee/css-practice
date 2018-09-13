@@ -1,0 +1,48 @@
+body {
+    background: #ccc;
+}
+.red-text {
+    color: red;
+    display: inline-block;
+}
+
+h1 {
+    font-family: Lobster, monospace;
+}
+
+header {
+    text-align: center;
+}
+
+label{
+    padding-top: 1em; 
+}
+
+p {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.smaller-image {
+    width: 100px;
+    display: inline-block;
+}
+
+.silver-background {
+    background-color: silver;
+    padding: 5em;
+    padding-bottom: 1em;
+}
+#cat-photo-form{
+    background-color: green;
+    padding: 5em;
+    padding-bottom: 1em;
+    padding-top: 1em; 
+}
