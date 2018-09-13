@@ -8,6 +8,7 @@ body {
 
 h1 {
     font-family: Lobster, monospace;
+    text-shadow: rgba(253, 253, 253, 0.774) 18px -14px 8px;
 }
 
 header {
@@ -23,6 +24,49 @@ p {
     font-family: monospace;
 }
 
+section {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 10rem;
+}
+  
+span {
+    display: inline-block;
+}
+  
+  .candy span {
+    position: relative;
+    font-family: "Patua One", cursive;
+    color: transparent;
+    z-index: 0;
+  }
+  
+  .candy span:before,
+  .candy span:after {
+    content: "Form";
+    position: absolute;
+    left: 0;
+  }
+  
+  .candy span:before {
+    color: #000;
+    background-size: 50px 50px;
+    background-color: #000;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .candy span:after {
+    content: "Form";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    text-shadow: -6px 6px 0 #000, -5px 5px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000, -2px 5px 15px #000;
+  }
+
 .thick-green-border {
     border-color: green;
     border-width: 10px;
@@ -33,7 +77,15 @@ p {
 .smaller-image {
     width: 100px;
     display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
+
+.smaller-image:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 
 .silver-background {
     background-color: silver;
